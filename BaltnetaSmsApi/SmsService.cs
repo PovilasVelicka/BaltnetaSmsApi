@@ -96,7 +96,8 @@ namespace BaltnetaSmsApi
             {
 
                 var result = response.Content.ReadAsStringAsync( ).Result;
-                if (JsonConvert.DeserializeObject<ResponseDto>(result).error == null)
+                var resp = JsonConvert.DeserializeObject<ResponseDto>(result);
+                if (resp.error == null)
                 {
                     var msg = JsonConvert.DeserializeObject<Dictionary<string, ResponseDto>>(result);
                     return new ServerResponse(
@@ -117,14 +118,14 @@ namespace BaltnetaSmsApi
                 {
                     return new ServerResponse(
                         isSucess: false,
-                        message: "");
+                        message: _errorCodes.FirstOrDefault(e => e.Key == resp.error).Value ?? "");
                 }
             }
             else
             {
                 return new ServerResponse(
                        isSucess: false,
-                       message: "Service error");
+                       message: "Unexpected error");
             }
         }
 

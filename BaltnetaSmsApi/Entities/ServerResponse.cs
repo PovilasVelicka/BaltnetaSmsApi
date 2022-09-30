@@ -18,8 +18,7 @@ namespace BaltnetaSmsApi.Entities
         public ServerResponse (bool isSucess,string message)
         {
             IsSucess = isSucess;
-            Message = message;
-  
+            Message = message;  
         }
 
         public ServerResponse (bool isSucess, string message, List<ResponseDto> smsReports)

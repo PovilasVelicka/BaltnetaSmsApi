@@ -5,6 +5,8 @@ VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaltnetaSmsApi", "BaltnetaSmsApi\BaltnetaSmsApi.csproj", "{95984C04-7E89-4109-98F0-47DE81D5F5E8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "Program\Program.csproj", "{F9C99740-112D-4156-A96C-388BEE3D0346}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{95984C04-7E89-4109-98F0-47DE81D5F5E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95984C04-7E89-4109-98F0-47DE81D5F5E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95984C04-7E89-4109-98F0-47DE81D5F5E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9C99740-112D-4156-A96C-388BEE3D0346}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9C99740-112D-4156-A96C-388BEE3D0346}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9C99740-112D-4156-A96C-388BEE3D0346}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9C99740-112D-4156-A96C-388BEE3D0346}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

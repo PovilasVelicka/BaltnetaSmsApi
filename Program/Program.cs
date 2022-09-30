@@ -1,7 +1,7 @@
-﻿using BaltnetaSmsApi;
+﻿using BaltnetaSmsApiCore;
 
 var service = new SmsService("", "");
- var RESP=  await service.SendSmsAsync("37069553298","tett","CRAMO");
+ var RESP=  await service.SendSmsAsync("phone","message","sender");
 
 
 Console.ReadLine( );

@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BaltnetaSmsApiCore\BaltnetaSmsApiCore.csproj" />
     <ProjectReference Include="..\BaltnetaSmsApi\BaltnetaSmsApi.csproj" />
   </ItemGroup>
 
